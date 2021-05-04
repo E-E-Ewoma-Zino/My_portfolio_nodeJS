@@ -1,0 +1,84 @@
+
+
+
+{
+    "title": "Projects",
+    "web": [
+        {
+            "name": "OwnIt ltd",
+            "topic": "Ecommerce Site",
+            "p1": "OwnIt is an e-commerce site for buying cheap and beautiful clothes.",
+            "p2": "Please know that this is a template, so none of the functions will work!"
+        },
+        {
+            "name": "My First Portfolio",
+            "topic": "Portfolio",
+            "p1": "This was my first portfolio. I didn't put it on the net till recently.",
+            "p2": "The site is a static and a non-functional site."
+        },
+        {
+            "name": "Rubby Travels",
+            "topic": "Travel Site",
+            "p1": "Rubby Travels is a site dedicated to bringing you closer to your dream vacation, from picking a destination to booking the flight. All brought to you in one site.",
+            "p2": [
+                "Rubby travels was built by ",
+                " and I. I was assigned to work on the frontend of the site."
+            ]
+        },
+        {
+            "name": "JustInTime Travels",
+            "topic": "Travel Site",
+            "p1": "JustInTime Travels is a beautiful site filled with tons of vacation trips. See all the beautiful places and book a flight there easily.",
+            "p2": [
+                "JustInTime is developed by ",
+                " and I was assigned to develop the frontend of the site."
+            ] 
+        },
+        {
+            "name": "Medcom Training Solution",
+            "topic": "Training Platform",
+            "p1": "Like all great websites, Medcom provides training on health care and other health-related topics. Their courses have been approved by CPD.",
+            "p2": [
+                "Medcom is a product of ",
+                " and I was in charge of the frontend and other major designs."
+            ]
+        }
+    ],
+    "flutter": [
+        {
+            "name": "Holy Calculator",
+            "topic": "Money Counter",
+            "p1": "I made this app specifically for the church. It can be use to get the sum total of your money in naira, from 1000 naira to 5 naira.",
+            "p2": "You can download the app and give it a try."
+        },
+        {
+            "name": "My Country Weather",
+            "topic": "Weather App",
+            "p1": "A weather app that gives you the current weather data for your location. And not just that, it also gives you access to check the weather of any country in the world.",
+            "p2": "To get the full ideal of the app, download it here."
+        },
+        {
+            "name": "We Chat",
+            "topic": "Social Platform",
+            "p1": "Your way of chatting with all your closest friends. Share this app with them, and you all can chat in a group.",
+            "p2": "What are you waiting for? get the app."
+        }
+    ],
+    "others": [
+        {
+            "name": "Upcoming Project",
+            "topic": "Sub Topic",
+            "p1": "This project helps you do your day to day activities faster and more efficiently.",
+            "p2": "With just a click of a button, your dreams can become your reality."
+        }
+    ],
+    "footer": "This website was designed by Ewoma Etemire to display his projects."
+}
+
+
+
+
+
+
+
+

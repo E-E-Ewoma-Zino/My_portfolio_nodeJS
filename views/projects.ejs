@@ -1,0 +1,330 @@
+<%- include("partials/header") %> 
+
+
+<div id="divider" class="divider"></div>
+
+<!-- this will introduce the game -->
+<div id="gameIntro">
+    <div class="gameName"><span class="font-xl my-text-white b">Hungry Twitter</span></div>
+    <div class="gameImg"><i class="fab fa-2x fa-twitter" style="color: white;"></i></div>
+    <button id="game-btn" class="btn btn-primary font-sm" onclick="startGame()">play</button>
+    <div id="game-help">
+        <span class="font-md my-text-white">
+            Use the arrow keys to move
+            <i class="fa fa-arrow-left my-text-white"></i>
+            <i class="fa fa-arrow-right my-text-white"></i>
+        </span>
+    </div>
+    <div id="game-help">
+        <span class="font-sm my-text-white">or click on any end of the screen</span>
+    </div>
+</div>
+
+<!-- I want to make a game here -->
+<div id="game-container">
+</div>
+
+<!-- this will display the score for the last played game -->
+<div id="gameOverBoard">
+    <div class="gameOver-text"><span class="font-lg my-text-white b">Game Over</span></div>
+    <div id="scoreboard" class="font-md my-text-white"></div>
+    <div class="gameOption">
+        <button id="game-btn" class="btn-primary" onclick="refeshGame()">Play Again</button>
+        <button id="game-btn" class="btn-primary" onclick="closeGame()">Maybe Later</button>
+    </div>
+</div>
+
+<!-- WEB PAGE -->
+<!-- Presentation of projects -->
+<div id="web" class="my-container present-project">
+    <div class="present-topic">
+        <p class="font-xl my-text-black b">Web Designs</p>
+        <p class="font-sm my-text-black">Some of my best work</p>
+    </div>
+    <div class="project">
+        <div class="my-card">
+            <div class="card-img">
+                <a href="#x">
+                    <img src="/images/images_for_index/ownIt2.png" alt="img" srcset="">
+                </a>
+                <div class="center-text">
+                    <a href="projects/ownit/home" target="_blank">
+                        <button class="btn font-md my-text-white b">See Now</button>
+                    </a>
+                </div>
+            </div>
+            <div class="card-detail">
+                <div class="topic">
+                    <a href="projects/ownit/home" target="_blank">
+                        <span class="font-lg my-text-black"><img src="https://img.icons8.com/cotton/2x/domain.png"
+                                alt="icon" width="10%" srcset=""><%= web[0].name %></span>
+                    </a>
+                </div>
+                <div class="sub-topic"><span class="font-md my-text-black"><%= web[0].topic %></span></div>
+                <div class="description my-border2">
+                    <p class="font-sm my-text-black"><%= web[0].p1 %></p>
+                    <p class="font-sm my-text-black"><%= web[0].p2 %></p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="project">
+        <div class="my-card reverse">
+            <div class="card-img">
+                <a href="#x">
+                    <img src="/images/images_for_index/first-portfolio.png" alt="img" srcset="">
+                </a>
+                <div class="center-text">
+                    <a href="my_first_portfolio/my_first_portfolio.html" target="_blank">
+                        <button class="btn font-md my-text-white b">See Now</button>
+                    </a>
+                </div>
+            </div>
+            <div class="card-detail">
+                <div class="topic">
+                    <a href="my_first_portfolio/my_first_portfolio.html" target="_blank">
+                        <span class="font-lg my-text-black"><img src="https://img.icons8.com/cotton/2x/domain.png"
+                                alt="icon" width="10%" srcset=""><%= web[1].name %></span>
+                    </a>
+                </div>
+                <div class="sub-topic"><span class="font-md my-text-black"><%= web[1].topic %></span></div>
+                <div class="description my-border1">
+                    <p class="font-sm my-text-black"><%= web[1].p1 %></p>
+                    <p class="font-sm my-text-black"><%= web[1].p2 %></p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="project">
+        <div class="my-card">
+            <div class="card-img">
+                <a href="#x">
+                    <img src="asset/images/images_for_index/rubby.png" alt="img" srcset="">
+                </a>
+                <div class="center-text">
+                    <a href="https://rubbytravels.com/" target="_blank">
+                        <button class="btn font-md my-text-white b">See Now</button>
+                    </a>
+                </div>
+            </div>
+            <div class="card-detail">
+                <div class="topic">
+                    <a href="https://rubbytravels.com/" target="_blank">
+                        <span class="font-lg my-text-black"><img
+                                src="https://img.icons8.com/cotton/2x/domain.png" alt="icon" width="10%"
+                                srcset=""><%= web[2].name %></span>
+                    </a>
+                </div>
+                <div class="sub-topic"><span class="font-md my-text-black"><%= web[2].topic %></span></div>
+                <div class="description my-border2">
+                    <p class="font-sm my-text-black"><%= web[2].p1 %></p>
+                    <p class="font-sm my-text-black"><%= web[2].p2[0] %><a
+                            href="http://www.da-manager.com" target="_blank"
+                            rel="noopener noreferrer">Da-Manager ltd</a> <%= web[2].p2[1] %></p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="project">
+        <div class="my-card reverse">
+            <div class="card-img">
+                <a href="#x">
+                    <img src="asset/images/images_for_index/justInTime.png" alt="img" srcset="">
+                </a>
+                <div class="center-text">
+                    <a href="https://dev.justintimetravels.net/" target="_blank">
+                        <button class="btn font-md my-text-white b">See Now</button>
+                    </a>
+                </div>
+            </div>
+            <div class="card-detail">
+                <div class="topic">
+                    <a href="https://dev.justintimetravels.net/" target="_blank">
+                        <span class="font-lg my-text-black"><img
+                                src="https://img.icons8.com/cotton/2x/domain.png" alt="icon" width="10%"
+                                srcset=""><%= web[3].name %></span>
+                    </a>
+                </div>
+                <div class="sub-topic"><span class="font-md my-text-black"><%= web[3].topic %></span></div>
+                <div class="description my-border1">
+                    <p class="font-sm my-text-black"><%= web[3].p1 %></p>
+                    <p class="font-sm my-text-black"><%= web[3].p2[0] %><a
+                            href="http://www.da-manager.com" target="_blank"
+                            rel="noopener noreferrer">Da-Manager</a><%= web[3].p2[1] %></p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="project">
+        <div class="my-card">
+            <div class="card-img">
+                <a href="#x">
+                    <img src="asset/images/images_for_index/medcom.png" alt="img" srcset="">
+                </a>
+                <div class="center-text">
+                    <a href="https://medtsol.com/dev/services/" target="_blank">
+                        <button class="btn font-md my-text-white b">See Now</button>
+                    </a>
+                </div>
+            </div>
+            <div class="card-detail">
+                <div class="topic">
+                    <a href="https://medtsol.com/dev/services/" target="_blank">
+                        <span class="font-lg my-text-black"><img
+                                src="https://img.icons8.com/cotton/2x/domain.png" alt="icon" width="10%"
+                                srcset=""><%= web[4].name %></span>
+                    </a>
+                </div>
+                <div class="sub-topic"><span class="font-md my-text-black"><%= web[4].topic %></span></div>
+                <div class="description my-border2">
+                    <p class="font-sm my-text-black"><%= web[4].p1 %>
+                    </p>
+                    <p class="font-sm my-text-black"><%= web[4].p2[0] %><a href="http://www.da-manager.com"
+                            target="_blank" rel="noopener noreferrer">Da-Manager</a><%= web[4].p2[1] %></p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- FLUTTER PAGE -->
+<!-- Presentation of projects -->
+<div id="flutter" class="my-container present-project">
+    <div class="present-topic">
+        <p class="font-xl my-text-black b">Flutter Apps</p>
+        <p class="font-sm my-text-black">Seeing is beliving. (links to github)</p>
+    </div>
+    <div class="project">
+        <div class="my-card">
+            <div class="card-img">
+                <a href="#x">
+                    <video class="project-video" autoplay muted loop>
+                        <source src="/videos/videos_for_index/20201017_220459.mp4" type="video/mp4">
+                        Your browser does not support the video tag.
+                    </video>
+                </a>
+                <div class="center-text">
+                    <a href="/apps/holy-calculator.zip" target="_blank" download>
+                        <button class="btn font-md my-text-white b">Download <i
+                                class="fa fa-download fnt-sm"></i></button>
+                    </a>
+                </div>
+            </div>
+            <div class="card-detail">
+                <div class="topic">
+                    <a href="#x" target="_blank">
+                        <span class="font-lg my-text-black"><img
+                                src="https://cdn.iconscout.com/icon/free/png-512/flutter-2038877-1720090.png" alt="icon"
+                                width="10%" srcset=""><%= flutter[0].name %></span>
+                    </a>
+                </div>
+                <div class="sub-topic"><span class="font-md my-text-black"><%= flutter[0].topic %></span></div>
+                <div class="description my-border2">
+                    <p class="font-sm my-text-black"><%= flutter[0].p1 %></p>
+                    <p class="font-sm my-text-black"><%= flutter[0].p2 %></p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="project">
+        <div class="my-card reverse">
+            <div class="card-img gif">
+                <a href="#x">
+                    <img src="/videos/videos_for_index/Clima.gif" alt="img" srcset="">
+                </a>
+                <div class="center-text">
+                    <a href="#x" target="_blank">
+                        <button class="btn font-md my-text-white b">Download <i
+                                class="fa fa-download fnt-sm"></i></button>
+                    </a>
+                </div>
+            </div>
+            <div class="card-detail">
+                <div class="topic">
+                    <a href="#x" target="_blank">
+                        <span class="font-lg my-text-black"><img
+                                src="https://cdn.iconscout.com/icon/free/png-512/flutter-2038877-1720090.png" alt="icon"
+                                width="10%" srcset=""><%= flutter[1].name %></span>
+                    </a>
+                </div>
+                <div class="sub-topic"><span class="font-md my-text-black"><%= flutter[1].topic %></span></div>
+                <div class="description my-border1">
+                    <p class="font-sm my-text-black"><%= flutter[1].p1 %></p>
+                    <p class="font-sm my-text-black"><%= flutter[1].topic %></p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="project">
+        <div class="my-card">
+            <div class="card-img gif">
+                <a href="#x">
+                    <img src="/videos/videos_for_index/Flash Chat.gif" alt="img" srcset="">
+                </a>
+                <div class="center-text">
+                    <a href="#x" target="_blank">
+                        <button class="btn font-md my-text-white b">Download <i
+                                class="fa fa-download fnt-sm"></i></button>
+                    </a>
+                </div>
+            </div>
+            <div class="card-detail">
+                <div class="topic">
+                    <a href="#x" target="_blank">
+                        <span class="font-lg my-text-black"><img
+                                src="https://cdn.iconscout.com/icon/free/png-512/flutter-2038877-1720090.png" alt="icon"
+                                width="10%" srcset=""><%= flutter[2].name %></span>
+                    </a>
+                </div>
+                <div class="sub-topic"><span class="font-md my-text-black"><%= flutter[2].topic %></span></div>
+                <div class="description my-border2">
+                    <p class="font-sm my-text-black"><%= flutter[2].p1 %></p>
+                    <p class="font-sm my-text-black"><%= flutter[2].p2 %></p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- OTHERS -->
+<!-- Presentation of projects -->
+<div id="others" class="my-container present-project">
+    <div class="present-topic">
+        <p class="font-xl my-text-black b">Other Activities</p>
+        <p class="font-sm my-text-black">I also like having fun.</p>
+    </div>
+    <div class="project">
+        <div class="my-card">
+            <div class="card-img">
+                <a href="#x">
+                    <img src="/images/images_for_index/slideshow2.png" alt="img" srcset="">
+                </a>
+                <div class="center-text">
+                    <a href="#x" target="_blank">
+                        <button class="btn font-md my-text-white b">See Now</button>
+                    </a>
+                </div>
+            </div>
+            <div class="card-detail">
+                <div class="topic">
+                    <a href="#x" target="_blank">
+                        <span class="font-lg my-text-black"><img src="https://img.icons8.com/nolan/2x/drawing.png"
+                                alt="icon" width="10%" srcset=""><%= others[0].name %></span>
+                    </a>
+                </div>
+                <div class="sub-topic"><span class="font-md my-text-black"><%= others[0].topic %></span></div>
+                <div class="description my-border2">
+                    <p class="font-sm my-text-black"><%= others[0].p1 %></p>
+                    <p class="font-sm my-text-black"><%= others[0].p2 %></p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div id="about-me"></div>
+<div id="teamUP"></div>
+
+<%- include("partials/footer") %> 

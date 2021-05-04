@@ -1,0 +1,11 @@
+{
+  "name": "12.-ewoma_etemire",
+  "version": "1.0.0",
+  "description": "Converting my static portfolio into a node js based site.",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Ewoma Etemire",
+  "license": "ISC"
+}

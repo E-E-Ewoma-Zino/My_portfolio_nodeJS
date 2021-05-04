@@ -1,0 +1,54 @@
+<%- include("partials/ownIt_header") %> 
+<link rel="stylesheet" href="/css/css_for_ownIt/main2.css">
+
+    <!-- SOME TEXT -->
+    <div class="text-box" align="center">
+        <h2 class="fnt-xl">Like what you see? Add to cart!</h2>
+    </div>
+
+    <!-- Product that was selected appers here -->
+    <div class="box">
+        <div class="box">
+            <div id="product-detail" class="product-detail-card">
+                <div class="product-img box-fluid">
+                    <img src="<%= product.img %> " alt="" srcset="" width="100%" height="100%">
+                </div>
+                <div class="product-detail box-fluid">
+                    <div class="item-name">
+                        <span class="fnt-lg color-b"><%= product.name %></span>
+                    </div>
+                    <div class="item-description">
+                        <span class="fnt-md color-b"><%= product.description %></span>
+                    </div>
+                    <div class="item-rating">
+                        <span class="card-star fnt-xs"><%= product.rating %></span>
+                    </div>
+                    <div class="item-price">
+                        <span class="card-price float-right fnt-sm">&#8358;<%= product.price %></span>
+                    </div>
+                    <div class="card2-btn">
+                        <a href="#x">
+                            <button class="btn btn-warning color1-bg color-w w-100 fnt-md b">
+                                <span class="card-name fnt-md">
+                                    <i class="fas fa-cart-plus color-w fnt-sm"></i>
+                                    Add to cart
+                                    <i class="fas fa-cart-plus color-w fnt-sm non-visible"></i>
+                                </span>
+                            </button>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <div id="t-shirt-badge" hidden></div>
+    <div id="shoes-badge" hidden></div>
+    <div id="shorts-badge" hidden></div>
+    <div id="bags-badge" hidden></div>
+    <div id="hats-badge" hidden></div>
+
+<%# include("partials/ownIt_offer") %> 
+<%- include("partials/ownIt_footer") %> 
+<%- include("partials/ownIt_scripts") %> 

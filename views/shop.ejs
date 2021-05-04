@@ -1,0 +1,109 @@
+<%- include("partials/ownIt_header") %> 
+
+    <!-- SIDE NAV 7 MULTY SLIDES -->
+    <div id="sideNav-multyslide">
+        <!-- SIDENAV -->
+        <div id="sidenav">
+            <h5 class="side-nav-heading list-group-item color-w color1-bg fnt-md">Top Category <i
+                    class="fas fa-tshirt float-right"></i></h5>
+            <ul class="list-group fnt-md">
+                <li class="list-group-item d-flex justify-content-between align-items-center">
+                    <a href="products/t-shirt" class="nav-link">T-Shirts</a>
+                    <span id="t-shirt-badge" class="badge badge-primary badge-pill">12</span>
+                </li>
+                <li class="list-group-item d-flex justify-content-between align-items-center">
+                    <a href="products/shoes" class="nav-link">Shoes</a>
+                    <span id="shoes-badge" class="badge badge-primary badge-pill">50</span>
+                </li>
+                <li class="list-group-item d-flex justify-content-between align-items-center">
+                    <a href="products/short" class="nav-link">Shorts</a>
+                    <span id="shorts-badge" class="badge badge-primary badge-pill">99</span>
+                </li>
+                <li class="list-group-item d-flex justify-content-between align-items-center">
+                    <a href="products/bag" class="nav-link">Bags</a>
+                    <span id="bags-badge" class="badge badge-primary badge-pill">99</span>
+                </li>
+                <li class="list-group-item d-flex justify-content-between align-items-center">
+                    <a href="products/hat" class="nav-link">Hats</a>
+                    <span id="hats-badge" class="badge badge-primary badge-pill">99</span>
+                </li>
+            </ul>
+            <h5 class="side-nav-heading list-group-item color-w color1-bg fnt-md">Popular <i
+                    class="fas fa-fire-alt float-right"></i></h5>
+            <ul class="list-group fnt-md">
+                <li class="list-group-item d-flex justify-content-between align-items-center">
+                    <a href="#x" class="nav-link">T-Shirts</a>
+                </li>
+                <li class="list-group-item d-flex justify-content-between align-items-center">
+                    <a href="#x" class="nav-link">Shoes</a>
+                </li>
+                <li class="list-group-item d-flex justify-content-between align-items-center">
+                    <a href="#x" class="nav-link">Shorts</a>
+                </li>
+                <li class="list-group-item d-flex justify-content-between align-items-center">
+                    <a href="#x" class="nav-link">Bags</a>
+                </li>
+                <li class="list-group-item d-flex justify-content-between align-items-center">
+                    <a href="#x" class="nav-link">Caps</a>
+                </li>
+            </ul>
+        </div>
+        <!-- MULTY SLIDES -->
+        <div id="multyslide">
+            <!-- SLIDE -->
+            <div id="demo" class="carousel shop-slide slide outside-slide" data-ride="carousel">
+                <!-- The slideshow -->
+                <div class="carousel-inner">
+                    <div class="carousel-item outside-slide-items active">
+                        <img src="https://images.unsplash.com/photo-1570213464614-d51b661c422f?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1050&q=80"
+                            alt="Los Angeles" width="1100" height="500">
+                    </div>
+                    <div class="carousel-item outside-slide-items">
+                        <img src="https://images.unsplash.com/photo-1546864558-fb3778ab5521?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&auto=format&fit=crop&w=831&q=80"
+                            alt="Chicago" width="1100" height="500">
+                    </div>
+                    <div class="carousel-item outside-slide-items">
+                        <img src="https://images.unsplash.com/photo-1557180295-76eee20ae8aa?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&auto=format&fit=crop&w=1400&q=80"
+                            alt="New York" width="1100" height="500">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- SOME TEXT -->
+    <div class="text-box" align="center">
+        <h2 class="fnt-xl">Shop <i class="fa fa-shopping-cart color2"></i></h2>
+    </div>
+
+    <!-- ALL Category OF PRODUCT -->
+    <div class="box-fluid d-flex justify-content-center flex-wrap">
+        <% allProduct.forEach(product=> { %>
+            <form class="myform" action="/projects/ownit/products/<%= product._id %>" method="POST">
+                <div class="card" onclick="submitCard()" title="<%= product._id %>">
+                    <div class="card-img">
+                        <input type="hidden" name="card_id" value="<%= product._id %>">
+                        <input type="hidden" name="card_type" value="<%= product.type %>">
+                        <a href=" #x">
+                            <img src="<%= product.img %>" alt="product">
+                        </a>
+                    </div>
+                    <div class="card-detail">
+                        <span class="card-name fnt-md">
+                            <%= product.name %>
+                                <i class="fas fa-cart-plus fnt-sm"></i>
+                        </span>
+                        <span class="card-star fnt-xs">
+                            <%= product.rating %>
+                        </span>
+                        <span class="card-price fnt-sm">&#8358;<%= product.price %></span>
+                    </div>
+                </div>
+            </form>
+        <% }); %>
+    </div>
+
+
+
+<%- include("partials/ownIt_footer") %> 
+<%- include("partials/ownIt_scripts") %> 

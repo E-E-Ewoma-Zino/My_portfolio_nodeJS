@@ -1,0 +1,60 @@
+
+{
+    "title": "Ewoma Etemire",
+    "slideShow": {
+        "my": {
+            "intro": "I am developer",
+            "name": "Ewoma Zino",
+            "text": "Specialise in flutter apps and Web development."
+        },
+        "web": {
+            "intro": "I specialise in",
+            "name": "Web Apps",
+            "text": "Building and designing a responsive website."
+        },
+        "flutter": {
+            "intro": "I specialise in",
+            "name": "Flutter Apps",
+            "text": "Producing functional and good-looking apps."
+        },
+        "logoIntro": {
+            "intro": "The Art in Coding",
+            "text": "I create art, not just product."
+        }
+    },
+    "webText": {
+        "p1": "Over the years, I have successfully designed multiple websites from scratch. My designs are responsive and functional, for businesses and individual purpose.",
+        "p2": "Take some time to view and experience my work."
+    },
+    "appText": {
+        "p1": "After perfecting myself in the art of web development, I went into the area of app development, and after several lessons of app development. I saw the art in coding.",
+        "p2": "You can easily download and install them on your device."
+    },
+    "otherText": {
+        "p1": "Aside from coding, I also have other interest, Kind of like photography.",
+        "p2": "This section is coming soon..."
+    },
+    "about": {
+        "topic": "All you need to know about me.",
+        "who_am_i": "I am the next big thing!",
+        "what_i_do": [
+            "I am a professional web developer. I have been designing websites for quite a while now",
+            "I am also a Flutter App developer. I have built and launched many Flutter Apps."
+        ],
+        "location": "I am located in",
+        "education": "I am an undergraguate in",
+        "about_charges": [
+            "I create art, not just product.",
+            "My charges are standard and affordable."
+        ]
+    },
+    "teamUp": {
+        "topic": "Looking for help with your project?",
+        "h1": "Let me help you",
+        "h2": "We would work together via",
+        "p1": "Do not hold back to team up with me if you need assistance with your project. We can team up, and together we can complete your project.",
+        "p2": "Or maybe you like it when I do all the work? I got no problem with that. Team up with me and see it done.",
+        "p3": "I can also help with your school project involving coding problems, be it C, C++, C#, Java, JavaScript, Python, Dart, CSS, and HTML."
+    },
+    "footer": "This website was designed by Ewoma Etemire. to display his projects."
+}

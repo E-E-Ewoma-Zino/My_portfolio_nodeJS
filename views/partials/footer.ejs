@@ -1,0 +1,203 @@
+
+
+
+
+        <!-- Conclusion -->
+        <div class="conclusion">
+
+            <!-- Talk with me card and ratings -->
+            <div class="feedback">
+                <!-- the customer can send me their comments -->
+                <div class="comments">
+                    <div class="my-card comment-card">
+                        <div class="card-detail primary-border-color">
+                            <div class="container"><span class="font-md my-text-white b">Talk with me:</span>
+                            </div>
+                            <!-- input form -->
+                            <div class="container description">
+                                <form id="gform" method="POST" class="pure-form pure-form-stacked"
+                                    data-email="from_email@example.com"
+                                    action="https://script.google.com/macros/s/AKfycbzz2rGd13lfOfotSw5R99EsZ9FKKL97yoQCj9QLagmeDcwHmOx39NbfVg/exec">
+                                    <input type="text" name="topic" id="commentTopic" value="Comment" hidden>
+                                    <div class="form-group">
+                                        <input type="text" class="my-form-control form-control font-sm" id="name"
+                                            placeholder="Enter Your Name" name="name">
+                                    </div>
+                                    <div class="form-group">
+                                        <input type="email" class="my-form-control form-control font-sm" id="email"
+                                            placeholder="Enter email" name="email">
+                                    </div>
+                                    <!-- comment text area -->
+                                    <div class="form-group">
+                                        <textarea class="my-form-control form-control font-sm" rows="5" id="message"
+                                            name="message" placeholder="Whats on your mind?"></textarea>
+                                    </div>
+                                    <!-- To get the value of the rating -->
+                                    <input type="text" name="rating" id="rating" value="" hidden>
+                                    <div class="d-flex align-items-center" style="justify-content: space-between">
+                                        <!-- Retings -->
+                                        <div class="description d-flex justify-content-center">
+                                            <div id="star">
+                                                <span class="font-md" onclick="star(1)">
+                                                    <i class="star-icon fa fa-star"></i>
+                                                </span>
+                                                <span class="font-md" onclick="star(2)">
+                                                    <i class="star-icon fa fa-star"></i>
+                                                </span>
+                                                <span class="font-md" onclick="star(3)">
+                                                    <i class="star-icon fa fa-star"></i>
+                                                </span>
+                                                <span class="font-md" onclick="star(4)">
+                                                    <i class="star-icon fa fa-star"></i>
+                                                </span>
+                                                <span class="font-md" onclick="star(5)">
+                                                    <i class="star-icon fa fa-star"></i>
+                                                </span>
+                                            </div>
+                                        </div>
+                                        <div class="">
+                                            <!-- btn -->
+                                            <button type="submit"
+                                                class="explore-btn btn primary-border-color font-sm my-text-white">Send</button>
+                                        </div>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- footer -->
+            <footer id="footer">
+                <div class="footer-top">
+                    <!-- footer top -->
+                    <div class="row">
+                        <div class="footer-col col-sm-3">
+                            <div class="footerLink">
+                                <ul class="navbar-nav my-ul" align="center">
+                                    <li class="nav-link font-sm">
+                                        <a href="#x">
+                                            <img src="/images/images_for_index/EL - BB_3D.png" alt="my logo"
+                                                width="50vmin">
+                                        </a>
+                                    </li>
+                                    <li class="nav-link font-sm">
+                                        <p><%= footer %> </p>
+                                    </li>
+
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="footer-col col-sm-3">
+                            <h3 class="font-md">Content</h3>
+                            <div class="footerLink">
+                                <ul class="navbar-nav my-ul">
+                                    <li class="nav-link font-sm">
+                                        <a href="/">
+                                            <span>Home</span>
+                                        </a>
+                                    </li>
+                                    <li class="nav-link font-sm">
+                                        <a href="#about">
+                                            <span>About</span>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="footer-col col-sm-3">
+                            <h3 class="font-md">Projects</h3>
+                            <div class="footerLink">
+                                <ul class="navbar-nav my-ul">
+                                    <li class="nav-link font-sm">
+                                        <a href="projects" onmouseover="tabBtn('web')">
+                                            <span>Web Project</span>
+                                        </a>
+                                    </li>
+                                    <li class="nav-link font-sm">
+                                        <a href="projects" onmouseover="tabBtn('app')">
+                                            <span>App Project</span>
+                                        </a>
+                                    </li>
+                                    <li class="nav-link font-sm">
+                                        <a href="projects" onmouseover="tabBtn('others')">
+                                            <span>Other Project</span>
+                                        </a>
+                                    </li>
+                                    <li class="nav-link font-sm b">
+                                        <a href="projects" onmouseover="tabBtn('game')" style="color: white;">
+                                            <span>Play my game</span>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="footer-col col-sm-3">
+                            <h3 class="font-md">Contact</h3>
+                            <div class="footerLink">
+                                <ul class="navbar-nav my-ul">
+                                    <li class="nav-link font-sm">
+                                        <a href="#x" onclick="contactMe(1)">
+                                            <span>Contact Me</span>
+                                        </a>
+                                    </li>
+                                    <li class="nav-link font-sm">
+                                        <a href="#x" onclick="contactMe(2)">
+                                            <span>Team Up</span>
+                                        </a>
+                                    </li>
+                                </ul>
+                                <ul class="navbar-nav justify-content-center" style="flex-direction: row;">
+                                    <li class="nav-link my-li-link">
+                                        <a href="https://twitter.com/E_wo_ma_Zi_no">
+                                            <i class="fab fa-2x fa-twitter-square"></i>
+                                        </a>
+                                    </li>
+                                    <li class="nav-link my-li-link">
+                                        <a href="https://www.instagram.com/eewoma75/">
+                                            <i class="fab fa-2x fa-fab fa-instagram-square"></i>
+                                        </a>
+                                    </li>
+                                    <li class="nav-link my-li-link">
+                                        <a href="https://www.linkedin.com/in/ewomaoghene-zino-etemire-41b79b19b/">
+                                            <i class="fab fa-2x fa-linkedin"></i>
+                                        </a>
+                                    </li>
+                                    <li class="nav-link my-li-link">
+                                        <a href="https://github.com/E-E-Ewoma-Zino">
+                                            <i class="fab fa-2x fa-github-square"></i>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- footer bottom -->
+                <div class="footer-bottom d-flex justify-content-center">
+                    <span class="no-go my-text-white font-sm">&copy; 2020 Ewoma Etemire</span>
+                </div>
+            </footer>
+
+            <!-- found btn to take you back [fa-arrow-alt-circle-up, fa-caret-up, fa-chevron-circle-up] to the top -->
+            <a id="topBtn" class="topBtn" href="#">
+                <div><i class="fa fa-caret-up fa-2x my-text-white"></i></div>
+            </a>
+        </div>
+    </main>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+        crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+        crossorigin="anonymous"></script>
+    <script src="/javaScript/javaScript_for_index/main.js" defer type="module"></script>
+    <script src="/javaScript/javaScript_for_index/index.js" defer type="module"></script>
+
+</body>
+
+</html>

@@ -1,0 +1,441 @@
+/*  */
+/* primary color */
+.primary-color{
+    background-color: rgb(125, 189, 224);
+}
+
+.inActive-color
+{
+    background-color: rgba(40, 50, 60, 1);
+}
+
+.my-a{
+    color: #fff;
+    text-decoration: none;
+}
+
+.my-a:hover{
+    color: #fff;
+    text-decoration: none;
+}
+
+.main-body
+{
+    text-align: center;
+    width: 100%;
+    display: inline-block;
+}
+
+.nav-dot{
+    font-size: 11px;
+}
+
+.main
+{
+    padding: 0px;
+    text-align: center!important;
+    background-color: white;
+}
+
+#optionsContainer
+{
+    display: none;
+}
+
+/* option for u? */
+.options
+{
+    width: 100%;
+    height: 150px;
+    transition: background-color .5s;
+}
+
+/* focus */
+.options:focus
+{
+    background-color:  rgba(10, 30, 70, 0.1)!important;
+}
+
+/* hover */
+.options:hover
+{
+    background-color:  rgba(10, 30, 70, 0.1);
+}
+
+/*  */
+.my-option-container
+{
+    width: 100%;
+    height: auto;
+    padding: 0px;
+}
+
+/*  */
+.my-logIn-container{
+    margin: 0px 0px;
+    padding: 25px 0px;
+}
+
+.my-jumbotron
+{
+    padding: 2rem 1rem;
+    margin-bottom: 2rem;
+    border-radius: .3rem;
+}
+
+.background-color-for-div
+{
+    background:  linear-gradient(0deg, rgb(125, 181, 223),transparent),linear-gradient(90deg, rgb(132, 150, 162),white);
+}
+
+#signUpContainer,#signInContainer
+{
+    display: none;
+}
+
+.signIn-btn
+{
+    font-size: 12px;
+    cursor: pointer;
+    padding: 5px;
+    color: white;
+}
+
+.signUp-btn
+{
+    color: white;
+}
+
+/* when the sign in btn is hovered */
+.signIn-btn:hover
+{
+    color: white;
+    font-weight: bold;
+}
+
+/* when the sign up btn is hovered */
+.signUp-btn:hover
+{
+    color: white;
+    font-weight: bold;
+}
+
+.btn-group
+{
+    background: linear-gradient(to right, rgb(125, 181, 223),rgb(185, 185, 185));
+    border-radius: 4px;  
+}
+
+.btn-submit{
+    width: 30%!important;
+    border: 1px solid!important;
+    height: 50px!important;
+    display: inline-block;  
+    align-items: center;
+    justify-content: center;
+}
+
+.btn-submit:hover,.btn-submit:active,.btn-submit:focus
+{
+    background-color: rgba(100, 181, 223, 1);
+}
+
+.wrong
+{
+    font-size: 12px;
+}
+
+#wrongUserName,#wrongPassword
+{
+    display: none;
+}
+
+
+/* This is the phone first approsh */
+
+/* make the children of header inline-block */
+.header{
+    /* position: relative; */
+    align-items: center;
+}
+
+.justify-content-space-evenly{
+    justify-content: space-evenly;
+}
+
+.header-icon, .header-nav{
+    display: inline-block;
+}
+
+.header-icon{
+    width: 20%;
+}
+
+/* .header-nav{
+    position: absolute;
+    top: 25%;
+    right: 10%;
+} */
+
+/* reduce the padding for the bootstraps nav-link class */
+.nav-link
+{
+    color: white;
+    padding: 0.5rem 0.5rem;
+}
+
+/*  */
+.description-container{
+    margin: 0px 0px;
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+
+/* all font-size */
+.font-sm{
+    font-size: 12px;
+}
+.font-md{
+    font-size: 20px;
+}
+.font-lg{
+    font-size: 26px;
+}
+.font-xl{
+    font-size: 35px;
+}
+
+.font-xl, .font-lg{
+    display: block;
+}
+
+/* make font bold */
+.b{font-weight: bold;}
+
+/* style the bold tag */
+b{
+    font-style: italic;
+}
+
+/* edited boostraps classes */
+/* btn text color white */
+.btn{
+    color: white;
+    padding: 0px;
+    width: 100%;
+    height: 100%;
+    border: none;
+}
+
+.btn:hover {
+    color: white;
+    /* text-decoration: none; */
+}
+
+.btn.focus, .btn:focus {
+    outline: none;
+    box-shadow: none;
+}
+/* end edition */
+
+/* since i changed the btn i have to edit others to fit my liking */
+.edited-btn
+{
+    padding: .375rem .75rem;;
+    width: auto;
+    height: auto;
+    border: 1px solid transparent;
+}
+
+/*  */
+.clear-seat
+{
+    width: 20%;
+    height: 50px;
+    margin: 10px;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(239, 148, 157);
+}
+
+.done
+{
+    background-color: rgb(116, 228, 141);
+}
+
+/*  */
+.busSeat{
+    margin: 2px;
+    height: 50px;
+    cursor: default!important;
+}
+
+.avaliable-seat
+{
+    cursor: pointer!important;
+    opacity: 1;
+    transition: opacity .4s;
+}
+
+.avaliable-seat:hover{
+    opacity: 0.3;
+}
+
+/* style the div holding the btn group */
+.my-btn{
+    margin: 10% 0%;
+}
+
+/* style image container */
+.image-container{
+    width: 100%;
+    height: auto;
+    margin-bottom: 0px;
+}
+
+/* style image tag */
+img{
+    width: 100%;
+    height: auto;
+}
+
+.img-control{
+    opacity: 0.5;
+}
+
+/* the background image for the rent bus */
+.img1{
+    background-image: url(../../images/images_for_my_first_portfolio/bus1.png);
+    width: 100%;
+    height: 200px;
+    background-position: center;
+    background-size: contain;
+}
+
+/* the background image for the rent bus */
+.img3{
+    background-image: url(../../images/images_for_my_first_portfolio/bus3.png);
+    width: 100%;
+    height: 200px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+/* move the btn to the buttom right */
+.description-btn{
+    margin: 10px 0px;
+    width: 100%;
+    height: 30px;
+}
+
+/* MEDIA QUERIES */
+
+/* if screen width goes above 450px do this */
+@media only screen and (min-width: 450px)
+{
+    /* move the btn to the buttom right */
+    .description-btn{
+        width: 50%;
+        height: 50px;
+        float: left;
+    }
+
+    .section{
+        clear: both;
+        display: block;
+    }
+
+    /* all font-size */
+    .font-sm{
+        font-size: 17px;
+    }
+    .font-md{
+        font-size: 23px;
+    }
+    .font-lg{
+        font-size: 28.5px;
+    }
+    .font-xl{
+        font-size: 35px;
+    }
+}
+
+/* MEDIA QUERIES */
+
+/* if screen width goes above 750px do this */
+@media only screen and (min-width: 750px)
+{
+    /* move the btn to the buttom right */
+    .description-btn{
+        width: 30%;
+        height: 50px;
+        float: right;
+    }
+
+    /* all font-size */
+    .font-sm{
+        font-size: 23px;
+    }
+    .font-md{
+        font-size: 25px;
+    }
+    .font-lg{
+        font-size: 38px;
+    }
+    .font-xl{
+        font-size: 75px;
+    }
+}
+
+/* MEDIA QUERIES */
+
+/* if screen width goes above 900px do this */
+@media only screen and (min-width: 900px)
+{
+    .btn-group{
+        width: 40%;
+        height: 80px;
+    }
+
+    /* the background image for the rent bus */
+    .img1{
+        background-image: url(../../images/images_for_my_first_portfolio/bus1.png);
+        width: 100%;
+        height: 450px;
+        background-repeat: repeat-x;
+    }
+
+    /* the background image for the rent bus */
+    .img3{
+        background-image: url(../../images/images_for_my_first_portfolio/bus3.png);
+        width: 100%;
+        height: 450px;
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+    }
+
+    .form-control{
+        height: 50px;
+    }
+
+    .form-control::placeholder{
+        font-size: 20px;
+    }
+
+    /* all font-size */
+    .font-sm{
+        font-size: 25px;
+    }
+    .font-md{
+        font-size: 28px;
+    }
+    .font-lg{
+        font-size: 38px;
+    }
+    .font-xl{
+        font-size: 75px;
+    }
+}

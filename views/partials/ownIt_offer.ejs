@@ -1,0 +1,33 @@
+
+
+    <!-- SOME TEXT -->
+    <div class="text-box">
+        <h3 class="fnt-md">Special Offer</h3>
+    </div>
+
+    <!-- DISPLAY SOME PRODUCT -->
+    <div class="linear-slide box">
+        <% for(let  i = 0; i < 12; i++) { %>
+            <form class="myform" action="/projects/ownit/products/<%= products[i]._id %> " method="POST">
+                <div class="card linear-card" onclick="submitCard()" title="<%= products[i]._id %>">
+                    <div class="card-img">
+                        <input type="hidden" name="card_id" value="<%= products[i]._id %>">
+                        <input type="hidden" name="card_type" value="<%= products[i].type %>">
+                        <a href=" #x">
+                            <img src="<%= products[i].img %>" alt="product">
+                        </a>
+                    </div>
+                    <div class="card-detail">
+                        <span class="card-name fnt-md">
+                            <%= products[i].name %>
+                                <i class="fas fa-cart-plus fnt-sm"></i>
+                        </span>
+                        <span class="card-star fnt-xs">
+                            <%= products[i].rating %>
+                        </span>
+                        <span class="card-price fnt-sm">&#8358;<%= products[i].price %></span>
+                    </div>
+                </div>
+            </form>
+        <% }; %>
+    </div>

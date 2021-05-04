@@ -1,0 +1,407 @@
+/* my styling */
+/* my own font family */
+@font-face{
+    font-family: font-family1;
+    src: url(..\..\asset\fonts\HindSiliguri-Regular.ttf);
+}
+
+@font-face{
+    font-family: font-family2;
+    src: url(..\..\asset\fonts\20180102204228_Giraffe-v5.08-latin104700004.ttf);
+}
+
+.text-black{color: black!important;}
+
+p{margin: 0px;}
+
+.b{font-weight: bold;}
+
+.italic{font-style: italic;}
+
+/* edit bootstraps */
+a:hover{
+    text-decoration: none;
+}
+.btn-outline:focus{
+    outline: none;
+}
+.font-sm{
+    font-size: 16px;
+    /* font-family: font-family1; */
+}
+.font-md{
+    font-size: 18px;
+    /* font-family: font-family2; */
+}
+.font-lg{
+    font-size: 30px;
+}
+.font-xl{
+    font-size: 40px;
+}
+.my-nav-font{
+    font-size: 18px;
+}
+
+
+/* backgrpund */
+.img1,.img2,.img3,.img4,.img5,.img6,.img7{
+    width: 100%;
+    height: 200px;
+    background-repeat: no-repeat;
+    background-position: bottom;   
+}
+
+/* background images */
+/* home */
+.img1{
+    background-image: url(../images/img2.png);
+    background-size: 258px 151px;
+    background-color: #1a3c5f;
+}
+
+
+/* background images */
+/* home */
+.img2{
+    background-image: url(../images/img10.png);
+    background-size: 257px 138px;
+    background-color: rgb(42, 62, 187);
+}
+
+/* background images */
+/* web */
+.img3{
+    background-image: url(../images/img6.png);
+    background-size: 322px 105px;
+    background-color: rgb(128, 213, 250);
+}
+
+/* background images */
+/* web */
+.img4 {
+    background-image: url(../images/img3.png);
+    background-size: 306px 135px;
+    background-color: #000e25;
+}
+
+/* background images */
+/* app */
+.img5 {
+    background-image: url(../images/img7.png);
+    background-size: 476px 128px;
+    background-color: rgb(1, 105, 202);
+}
+
+/* background images */
+/* app */
+.img6 {
+    background-image: url(../images/img9.png);
+    background-size: 252px 117px;
+    background-color: #45418e;
+}
+
+/* background images */
+/* other */
+.img7 {
+    background-image: url(../images/img4.png);
+    background-size: 238px 115px;
+    background-color: rgb(110, 196, 213);
+}
+
+/* multiple back ground image */
+.multiple-img{
+    background: url(../images/phone.png), url(../images/rocket.png), url(../images/diamond.png), url(../images/dolla-sign.png);
+    background-position: 2% 34%, 64% 7%, 88% 74%, 36% 118%;
+    background-size: 57px;
+    background-repeat: no-repeat;
+    background-origin: content-box;
+    opacity: 0.9;
+    height: 200px;
+}
+
+/*  NAV STYLING */
+/* navbar style */
+#navbar{
+    position: fixed; /* Make it stick/fixed */
+    top: 0; /* Stay on top */
+    width: 100%; /* Full width */
+    z-index: 1;
+    transition: top 0.3s;
+    background-color: #fff;
+}
+
+/* move the nav links to the right end */
+.collapsible-nav{
+    justify-content: flex-end;
+}
+
+/* search */
+.search-body{
+    position: relative;
+    overflow: hidden;
+    border-radius: 12px;
+    border: 1px solid rgba(80, 76, 78, .2);
+}
+
+/* style the search field */
+.search{
+    width: 100%;
+    height: 100%;
+    padding: 20px;
+    outline: none;
+    border-radius: 12px;
+    border: none;
+}
+
+/* style the btn to fit the search bar */
+.search-btn{
+    position: absolute;
+    top: 0%;
+    right: -23px;
+    width: 100px;
+    height: 100%;
+    border: none;
+    background: white;
+    transition:  .5s;
+}
+
+/* hover effect for btn */
+.search-btn:hover{
+    background-color: rgb(192, 186, 188);
+}
+
+/* active effect for btn */
+.search-btn:active{
+    background-color: black
+}
+
+/* remove the outline from btn */
+.search-btn:focus{
+    outline: none;
+    box-shadow: none;
+}
+
+/* make search icon biger */
+.search-icon{
+    font-size: 20px;
+}
+
+/* MEDIA QUERIE */
+/* if screen width above 767px */
+@media only screen and (min-width: 550px){
+    /* multiple back ground image */
+    .multiple-img{
+        background-position: 21% 35%, 62% 6%, 88% 76%, 36% 118%;
+        background-size: 73px;
+    }
+}
+
+/* Tablets, ipads  */
+/* if screen width above 767px */
+@media only screen and (min-width: 767px){
+    .search-body{
+        width: 38%;
+    }
+
+    /* style the btn to fit the search bar */
+    /* .search-btn{
+        top: 0%;
+        right: -23px;
+    } */
+
+    /* increase width */
+    .collapsible-nav{
+        width: 100% ;
+    }
+
+    /* shift it to the end */
+    .ul-nav{
+        width: 100%;
+        display: flex;
+        justify-content: flex-end;
+    }
+
+    /*  */
+    .my-li{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 0px 5px
+    }
+
+    /* my font sizes */
+    .font-sm{
+        font-size: 18px;
+    }
+    .font-md{
+        font-size: 23px;
+    }
+    .font-lg{
+        font-size: 32px;
+    }
+    .font-xl{
+        font-size: 40px;
+    }
+
+    /* background images */
+    /* home */
+    .img1,.img2,.img3,.img4,.img5,.img6,.img7{
+        background-position: right;
+        background-size: contain;
+    }
+}
+
+/* MEDIA QUERIE */
+/* for laptops */
+/* if screen width above 1018 */
+@media only screen and (min-width: 1018px){
+    /* style the btn to fit the search bar */
+    /* .search-btn{
+        top: 0%;
+        right: -23px;
+    } */
+
+    /* my font sizes */
+    .font-sm{
+        font-size: 22px;
+    }
+    .font-md{
+        font-size: 26px;
+    }
+    .font-lg{
+        font-size: 37px;
+    }
+    .font-xl{
+        font-size: 44px;
+    }
+}
+
+/* MAIN BODY. All projects use this styling */
+/*  */
+/* the current page styling */
+.page{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.page-description > span{
+    z-index: 2;
+    opacity: 1!important;
+}
+
+/* Thanks section */
+.thanks{
+    margin: 20px 0px;
+}
+
+.thanks-body{
+    display: inline-block;
+    text-align: center;
+    width: 100%;    
+}
+
+.thanks-card{
+    display: inline-block;
+    text-align: center;
+    width: 40%;
+    margin: 10px 0px;
+}
+
+.thanks-card-img{
+    width: 100%;
+    border-radius: 50%;   
+}
+
+.thanks-card-img > a > img{
+    width: 80px;
+    height: auto;
+    border-radius: 50%;
+}
+
+.thanks-card-description{
+    width: 100%;    
+}
+
+/* this is where the card is */
+.main-content{
+    text-align: center;
+}
+
+/* card section */
+.my-card{
+    display: inline-block;
+    width: 100%;
+    max-width: 500px;
+    margin: 40px 0px;
+}
+
+/* card image */
+.card-img{
+    width: 100%;
+    height: auto;
+    border-radius: 7px;
+    box-shadow: 0 9px 47.5px -26px #8a8686, -1px -4px 37px -25.9px #444445;
+}
+
+/* give card image border radius*/
+.card-img > a > img{
+    border-radius: 7px;
+}
+
+/* card-descreption */
+.card-description{
+    padding-top: .5rem;
+    padding-bottom: .5rem;
+}
+
+/* make the btn go to the end */
+.card-description-btn{
+    display: flex;
+    justify-content: flex-end;
+}
+
+/* MEDIA QUERIES FOR CARD */
+/* if device is a tablet of ipad or greater than 765px */
+@media only screen and (min-width: 765px){
+    /* card section */
+    .my-card{
+        width: 40%;
+        margin: 40px 20px;
+    }
+
+    /* increase the width */
+    .thanks-card-img > a > img{
+        width: 130px;
+    }
+}
+
+/* FOOTER */
+.footer{
+    margin: 20px 0px 5px 0px;
+}
+/* footer ul. Make it to be inline */
+.footer-ul{
+    flex-direction: initial;
+}
+
+/* space the items */
+.footer-li{
+    margin: 0px 10px;
+}
+
+/*  */
+/* THIS STYLING IS FOR ONLY THE HOME PAGE */
+.my-description{
+    margin: 40px 0px;
+}
+
+.my-description-links{
+    margin-top: 10px;
+}
+
+.contact-img{
+    width: 60px;
+    height: auto    ;
+}

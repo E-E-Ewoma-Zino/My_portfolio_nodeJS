@@ -1,0 +1,119 @@
+<%- include("partials/ownIt_header") %>
+
+
+    <!-- SIDE NAV 7 MULTY SLIDES -->
+    <div id="sideNav-multyslide">
+        <!-- SIDENAV -->
+        <div id="sidenav">
+            <h5 class="side-nav-heading list-group-item color-w color1-bg fnt-md">Top Category <i
+                    class="fas fa-tshirt float-right"></i></h5>
+            <ul class="list-group fnt-md">
+                <li class="list-group-item d-flex justify-content-between align-items-center">
+                    <a href="t-shirt.html" class="nav-link">T-Shirts</a>
+                    <span id="t-shirt-badge" class="badge badge-primary badge-pill">12</span>
+                </li>
+                <li class="list-group-item d-flex justify-content-between align-items-center">
+                    <a href="shoes.html" class="nav-link">Shoes</a>
+                    <span id="shoes-badge" class="badge badge-primary badge-pill">50</span>
+                </li>
+                <li class="list-group-item d-flex justify-content-between align-items-center">
+                    <a href="shorts.html" class="nav-link">Shorts</a>
+                    <span id="shorts-badge" class="badge badge-primary badge-pill">99</span>
+                </li>
+                <li class="list-group-item d-flex justify-content-between align-items-center">
+                    <a href="bags.html" class="nav-link">Bags</a>
+                    <span id="bags-badge" class="badge badge-primary badge-pill">99</span>
+                </li>
+                <li class="list-group-item d-flex justify-content-between align-items-center">
+                    <a href="hats.html" class="nav-link">Hats</a>
+                    <span id="hats-badge" class="badge badge-primary badge-pill">99</span>
+                </li>
+            </ul>
+            <h5 class="side-nav-heading list-group-item color-w color1-bg fnt-md">Popular <i
+                    class="fas fa-fire-alt float-right"></i></h5>
+            <ul class="list-group fnt-md">
+                <li class="list-group-item d-flex justify-content-between align-items-center">
+                    <a href="#x" class="nav-link">T-Shirts</a>
+                </li>
+                <li class="list-group-item d-flex justify-content-between align-items-center">
+                    <a href="#x" class="nav-link">Shoes</a>
+                </li>
+                <li class="list-group-item d-flex justify-content-between align-items-center">
+                    <a href="#x" class="nav-link">Shorts</a>
+                </li>
+                <li class="list-group-item d-flex justify-content-between align-items-center">
+                    <a href="#x" class="nav-link">Bags</a>
+                </li>
+                <li class="list-group-item d-flex justify-content-between align-items-center">
+                    <a href="#x" class="nav-link">Caps</a>
+                </li>
+            </ul>
+        </div>
+        <!-- MULTY SLIDES -->
+        <div id="multyslide">
+            <!-- SLIDE -->
+            <div id="demo" class="carousel shop-slide slide outside-slide" data-ride="carousel">
+                <!-- The slideshow -->
+                <div class="carousel-inner">
+                    <div class="carousel-item outside-slide-items active">
+                        <img src="/images/images_for_ownIt/Models/image17.jpg" alt="Los Angeles" width="1100"
+                            height="500">
+                    </div>
+                    <div class="carousel-item outside-slide-items">
+                        <img src="/images/images_for_ownIt/Models/image5.jpg" alt="Chicago" width="1100" height="500">
+                    </div>
+                    <div class="carousel-item outside-slide-items">
+                        <img src="/images/images_for_ownIt/Models/felipe-galvan-AhfrA5VQNpM-unsplash.jpg" alt="New York"
+                            width="1100" height="500">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- SOME TEXT -->
+    <div class="text-box" align="center">
+        <h2 class="fnt-xl">
+            <%= products[0].type %> <i class="fa fa-shopping-cart color2"></i>
+        </h2>
+    </div>
+
+    <!-- ALL Category OF PRODUCT -->
+    <div id="products" class="box-fluid d-flex justify-content-center flex-wrap">
+        
+        <% for(let  i = 0; i < products.length; i++) { %>
+            <form class="myform" action="/projects/ownit/products/<%= products[i]._id %> " method="POST">
+                <div class="card" onclick="submitCard()" title="<%= products[i]._id %>">
+                    <div class="card-img">
+                        <input type="hidden" name="card_id" value="<%= products[i]._id %>">
+                        <input type="hidden" name="card_type" value="<%= products[i].type %>">
+                        <a href=" #x">
+                            <img src="<%= products[i].img %>" alt="product">
+                        </a>
+                    </div>
+                    <div class="card-detail">
+                        <span class="card-name fnt-md">
+                            <%= products[i].name %>
+                                <i class="fas fa-cart-plus fnt-sm"></i>
+                        </span>
+                        <span class="card-star fnt-xs">
+                            <%= products[i].rating %>
+                        </span>
+                        <span class="card-price fnt-sm">&#8358;<%= products[i].price %></span>
+                    </div>
+                </div>
+            </form>
+        <% }; %>
+    </div>
+
+    <%- include("partials/ownIt_footer") %>
+
+        <script type="module">
+            import { assign_only } from "/javaScript/javaScript_for_ownIt/product.js";
+            import { } from "../app.js";
+            const products = document.getElementById("products");
+            console.log("the " + title);
+            assign_only(products);
+        </script>
+
+        <%- include("partials/ownIt_scripts") %>

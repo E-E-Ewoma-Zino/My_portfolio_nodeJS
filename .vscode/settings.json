@@ -1,0 +1,43 @@
+{
+    "terminal.integrated.shell.windows": "C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\powershell.exe",
+    "C_Cpp.updateChannel": "Insiders",
+    "update.showReleaseNotes": false,
+    "[c]": {
+        "editor.defaultFormatter": "ms-vscode.cpptools"
+    },
+    "liveServer.settings.donotShowInfoMsg": true,
+    "[html]": {
+        "editor.defaultFormatter": "vscode.html-language-features"
+    },
+    "[css]": {
+        "editor.defaultFormatter": "aeschli.vscode-css-formatter"
+    },
+    "files.autoSave": "afterDelay",
+    "editor.quickSuggestions": true,
+    "editor.suggest.statusBar.visible": true,
+    "liveServer.settings.donotVerifyTags": true,
+    "diffEditor.ignoreTrimWhitespace": false,
+    "[javascript]": {
+        "editor.defaultFormatter": "vscode.typescript-language-features"
+    },
+    "javascript.updateImportsOnFileMove.enabled": "always",
+    "workbench.colorTheme": "Halcyon",
+    "workbench.iconTheme": "material-icon-theme",
+    "git.autofetch": true,
+    "window.zoomLevel": 0,
+    "grammarly.debug": true,
+    "grammarly.diagnostics": {
+
+        "[markdown]": {
+            "ignore": []
+        }
+    },
+    "grammarly.emotions": [
+    "confident",
+    "friendly"
+    ],
+    "grammarly.goals": [
+        "inform"
+    ],
+    "grammarly.showExamples": true,
+}

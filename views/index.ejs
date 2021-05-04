@@ -1,0 +1,425 @@
+<%- include("partials/header") %> 
+
+<!-- slide show -->
+<!-- carousel is done with bootstraps -->
+<div id="demo" class="carousel slide" data-interval="15000" data-ride="carousel">
+    <!-- indicate whats image the carousel is -->
+    <ul class="carousel-indicators">
+        <li data-target="#demo" data-slide-to="0" class="active"></li>
+        <li data-target="#demo" data-slide-to="1"></li>
+        <li data-target="#demo" data-slide-to="2"></li>
+        <li data-target="#demo" data-slide-to="3"></li>
+    </ul>
+    <!-- display container -->
+    <div class="carousel-inner">
+        <!-- image and text -->
+        <div class="carousel-item my-fade active">
+            <div class="slideshow-img-div">
+                <img src="/images/images_for_index/Ewoma_1.png" alt="My Image" srcset="">
+            </div>
+            <img src="https://images.unsplash.com/photo-1495306056492-7bc87e249cf0?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&auto=format&fit=crop&w=750&q=80"
+                alt="slide" width="100%" height="500">
+            <div class="my-intro">
+                <div class="slideshow-text-div">
+
+                    <span class="my-text-white font-md"><%= slideShow.my.intro %></span><br>
+                </div>
+                <div class="slideshow-text-div name-div">
+
+                    <span class="my-name my-text-white font-xl b"><%= slideShow.my.name %></span>
+                </div>
+                <div class="slideshow-text-div">
+
+                    <p class="my-text-white font-sm"><%= slideShow.my.text %></p>
+                </div>
+            </div>
+        </div>
+        <!-- image and text -->
+        <div class="carousel-item my-fade">
+            <div class="slideshow-img-div">
+                <img src="/images/images_for_index/Ewoma_1.png" alt="My Image" srcset="">
+            </div>
+            <img src="https://images.unsplash.com/uploads/1413240166057094ef918/c5279735?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&auto=format&fit=crop&w=753&q=80"
+                alt="slide" width="100%" height="500">
+            <div class="my-intro">
+                <div class="slideshow-text-div">
+
+                    <span class="my-text-white font-md"><%= slideShow.flutter.intro %></span><br>
+                </div>
+                <div class="slideshow-text-div name-div">
+
+                    <span class="my-name my-text-white font-xl b"><%= slideShow.flutter.name %></span>
+                </div>
+                <div class="slideshow-text-div">
+
+                    <p class="my-text-white font-sm"><%= slideShow.flutter.text %></p>
+                </div>
+            </div>
+        </div>
+        <!-- image and text -->
+        <div class="carousel-item my-fade">
+            <div class="slideshow-img-div">
+                <img src="/images/images_for_index/Ewoma_1.png" alt="My Image" srcset="">
+            </div>
+            <img src="https://images.unsplash.com/photo-1496964295991-c4a746bdeb8c?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&auto=format&fit=crop&w=1405&q=80"
+                alt="slide" width="100%" height="500">
+            <div class="my-intro">
+                <div class="slideshow-text-div">
+
+                    <span class="my-text-white font-md"><%= slideShow.web.intro %></span><br>
+                </div>
+                <div class="slideshow-text-div name-div">
+
+                    <span class="my-name my-text-white font-xl b"><%= slideShow.web.name %></span>
+                </div>
+                <div class="slideshow-text-div">
+
+                    <p class="my-text-white font-sm"><%= slideShow.web.text %></p>
+                </div>
+            </div>
+        </div>
+        <!-- image and text -->
+        <div class="carousel-item my-fade">
+            <div class="slideshow-img-div">
+                <img src="/images/images_for_index/Ewoma_1.png" alt="My Image" srcset="">
+            </div>
+            <img src=https://images.unsplash.com/photo-1586424628777-259165cbca15?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&auto=format&fit=crop&w=750&q=80"
+                alt="slide" width="100%" height="500">
+            <div class="my-intro">
+                <div class="slideshow-text-div">
+
+                    <span class="my-text-white font-md"><%= slideShow.logoIntro.intro %></span><br>
+                </div>
+                <div class="slideshow-text-div name-div">
+                    <img class="my-name" src="/images/images_for_index/EL - BB_3D.png" alt="" srcset=""
+                        style="width: 35%; height: inherit;">
+                </div>
+
+                <div class="slideshow-text-div">
+
+                    <p class="my-text-white font-sm"><%= slideShow.logoIntro.text %></p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- btn to expore -->
+    <div class="explore-btn-div">
+        <a href="projects">
+            <button class="explore-btn primary-border-color font-md my-text-white"
+                onmouseover="tabBtn('only projects')">Explore
+                My Works</button>
+        </a>
+    </div>
+</div>
+
+<!-- Presentation of projects -->
+<div class="my-container present-project">
+    <div class="present-topic">
+        <p class="font-xl my-text-black b">Preview</p>
+        <p class="font-sm my-text-black">Seeing is beliving</p>
+    </div>
+    <div class="project">
+        <div class="my-card">
+            <div class="card-img" onmouseover="tabBtn('web')">
+                <a href="#x">
+                    <img src="https://images.unsplash.com/photo-1507238691740-187a5b1d37b8?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=393&q=80"
+                        alt="img" srcset="">
+                </a>
+                <div class="center-text">
+                    <a href="projects">
+                        <button class="btn font-md my-text-white b" onmouseover="tabBtn('web')">See Now</button>
+                    </a>
+                </div>
+            </div>
+            <div class="card-detail">
+                <div class="topic">
+                    <a href="projects" onmouseover="tabBtn('web')">
+                        <span class="font-lg my-text-black"><img src="https://img.icons8.com/cotton/2x/domain.png"
+                                alt="icon" width="10%" srcset="">
+                            Web Apps</span>
+                    </a>
+                </div>
+                <div class="sub-topic"><span class="font-md my-text-black">All web project</span></div>
+                <div class="description my-border2">
+                    <p class="font-sm my-text-black"><%= webText.p1 %> </p>
+                    <p class="font-sm my-text-black"><%= webText.p2 %> </p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="project">
+        <div class="my-card reverse">
+            <div class="card-img" onmouseover="tabBtn('flutter')">
+                <a href="#x">
+                    <img src="https://images.unsplash.com/photo-1563884072595-24a1d9dd5647?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=703&q=80"
+                        alt="img" srcset="">
+                </a>
+                <div class="center-text">
+                    <a href="projects" onmouseover="tabBtn('flutter')">
+                        <button class="btn font-md my-text-white b">See Now</button>
+                    </a>
+                </div>
+            </div>
+
+            <div class="card-detail">
+                <div class="topic">
+                    <a href="projects" onmouseover="tabBtn('flutter')">
+                        <span class="font-lg my-text-black"><img
+                                src="https://cdn.iconscout.com/icon/free/png-512/flutter-2038877-1720090.png" alt="icon"
+                                width="10%" srcset=""> Flutter Apps</span>
+                    </a>
+                </div>
+                <div class="sub-topic"><span class="font-md my-text-black">All Phone Applications</span></div>
+                <div class="description my-border1">
+                    <p class="font-sm my-text-black">
+                        <%= appText.p1 %> 
+                        <img src="/images/images_for_index/EL - WB_SEMI-SOLID.png" alt="my logo" width="5%">
+                    </p>
+                    <p class="font-sm my-text-black"><%= appText.p2 %></p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="project">
+        <div class="my-card">
+            <div class="card-img" onmouseover="tabBtn('others')">
+                <a href="#x">
+                    <img src="https://images.unsplash.com/photo-1593642634443-44adaa06623a?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=625&q=80"
+                        alt="img" srcset="">
+                </a>
+                <div class="center-text">
+                    <a href="projects" onmouseover="tabBtn('others')">
+                        <button class="btn font-md my-text-white b">See Now</button>
+                    </a>
+                </div>
+            </div>
+            <div class="card-detail">
+                <div class="topic">
+                    <a href="projects" onmouseover="tabBtn('others')">
+                        <span class="font-lg my-text-black"><img src="https://img.icons8.com/nolan/2x/drawing.png"
+                                alt="icon" width="10%" srcset="">
+                            Other Interest</span>
+                    </a>
+                </div>
+                <div class="sub-topic"><span class="font-md my-text-black">Other things I love doing</span>
+                </div>
+                <div class="description my-border2">
+                    <p class="font-sm my-text-black"><%= otherText.p1 %> </p>
+                    <p class="font-sm my-text-black"><%= otherText.p2 %></p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- See More btn  -->
+    <div class="explore-btn-div viewMore">
+        <a href="projects" onmouseover="tabBtn('only projects')">
+            <button class="explore-btn primary-border-color font-md my-text-white b">See Projects <i
+                    class="fa fa-arrow-right"></i></button>
+        </a>
+    </div>
+</div>
+
+<!--  -->
+<!-- About me page -->
+<div id="about-me" class="my-container about">
+    <!-- the heading -->
+    <!-- <div id="aboutTitle" class="d-flex justify-content-center my-text-white b">About Me</div> -->
+    <div class="about-topic"><span class="font-xl my-text-black b">About Me</span></div>
+    <div class="about-subtopic"><span class="font-md my-text-black"><%= about.topic %> </span></div>
+    <!-- the details in card form -->
+    <div class="about-detail rounded">
+        <!-- describe me -->
+        <div class="container about-description">
+            <!-- topic -->
+            <div class="the-topic"><span class="font-lg my-text-black">Who am I?</span></div>
+            <!-- detatils body -->
+
+            <div class="the-body rounded">
+                <p class="font-sm my-text-black">
+                    <%= about.who_am_i %> 
+                </p>
+                <div class="about-img">
+                    <img src="https://images.unsplash.com/photo-1554497342-902a4f8da8ed?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=750&q=80"
+                        alt="" srcset="" width="100%">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- the details in card form -->
+    <div class="about-detail rounded">
+        <!-- describe me -->
+        <div class="container about-description">
+            <!-- topic -->
+            <div class="the-topic"><span class="font-lg my-text-black">What I do</span></div>
+            <!-- detatils body -->
+            <div class="the-body rounded">
+                <p class="font-sm my-text-black"><%= about.what_i_do[0] %> <a href="projects" onmouseover="tabBtn('web')">See here</a>.</p>
+
+                <p class="font-sm my-text-black"> <%= about.what_i_do[1] %>  <a href="projects" onmouseover="tabBtn('flutter')">See here</a>.</p>
+                <div class="about-img">
+                    <img src="https://images.unsplash.com/photo-1483058712412-4245e9b90334?ixlib=rb-1.2.1&auto=format&fit=crop&w=1500&q=80"
+                        alt="" srcset="" width="100%">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- the details in card form -->
+    <div class="about-detail rounded">
+        <!-- describe me -->
+        <div class="container about-description">
+            <!-- topic -->
+            <div class="the-topic"><span class="font-lg my-text-black">Location</span></div>
+            <!-- detatils body -->
+            <div class="the-body rounded">
+                <p class="font-sm my-text-black"><%= about.location %>  <a
+                        href="https://www.google.com/maps/place/Warri/@5.5521974,5.6378636,11z/data=!3m1!4b1!4m5!3m4!1s0x1041b2ee387d1067:0x35957f67d789a763!8m2!3d5.5543995!4d5.7932008"
+                        target="_blank" rel="noopener noreferrer">Warri,Nigeria</a>.
+                </p>
+                <div class="about-img">
+                    <img src="https://images.unsplash.com/photo-1562504208-03d85cc8c23e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=750&q=80"
+                        alt="" srcset="" width="100%">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- the details in card form -->
+    <div class="about-detail rounded">
+        <!-- describe me -->
+        <div class="container about-description">
+            <!-- topic -->
+            <div class="the-topic"><span class="font-lg my-text-black">Education</span></div>
+            <!-- detatils body -->
+            <div class="the-body rounded">
+                <p class="font-sm my-text-black">
+                    <%= about.education %>  <a href="http://fupre.ng.edu" target="_blank"
+                        title="Federal University of Petroleum and Resources Effurun"
+                        rel="noopener noreferrer">FUPRE</a>.
+                </p>
+                <div class="about-img">
+                    <img src="https://images.unsplash.com/photo-1491841550275-ad7854e35ca6?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=667&q=80"
+                        alt="" srcset="" width="100%">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- the details in card form -->
+    <div class="about-detail rounded">
+        <!-- describe me -->
+        <div class="container about-description">
+            <!-- topic -->
+            <div class="the-topic"><span class="font-lg my-text-black">About my charges</span></div>
+            <!-- detatils body -->
+            <div class="the-body rounded">
+                <p class="font-sm my-text-black"><q><%= about.about_charges[0] %></q>.</p>
+
+                <p class="font-sm my-text-black">
+                    <%= about.about_charges[1] %>
+                </p>
+                <div class="about-img">
+                    <img src="https://images.unsplash.com/photo-1521897258701-21e2a01f5e8b?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=750&q=80"
+                        alt="" srcset="" width="100%">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- the details in card form -->
+    <div class="about-detail rounded">
+        <!-- describe me -->
+        <div class="container about-description">
+            <!-- topic -->
+            <div class="the-topic"><span class="font-lg my-text-black">Skills</span></div>
+            <!-- detatils body -->
+            <div class="the-body rounded">
+                <!-- progress bar -->
+                <div class="my-progressBar">
+                    <div class="progress-name"><span class="font-sm my-text-black b">HTML: 83%</span></div>
+                    <div class="progress">
+                        <div class="progress-bar progress-bar-striped progress-bar-animated1" style="width:83%">
+                        </div>
+                    </div>
+                </div>
+                <!-- progress bar -->
+                <div class="my-progressBar">
+                    <div class="progress-name"><span class="font-sm my-text-black b">CSS: 75%</span></div>
+                    <div class="progress">
+                        <div class="progress-bar progress-bar-striped progress-bar-animated2" style="width:75%">
+                        </div>
+                    </div>
+                </div>
+                <!-- progress bar -->
+                <div class="my-progressBar">
+                    <div class="progress-name"><span class="font-sm my-text-black b">JavaScript: 61%</span>
+                    </div>
+                    <div class="progress">
+                        <div class="progress-bar progress-bar-striped progress-bar-animated3" style="width:61%">
+                        </div>
+                    </div>
+                </div>
+                <!-- progress bar -->
+                <div class="my-progressBar">
+                    <div class="progress-name"><span class="font-sm my-text-black b">Dart: 70%</span></div>
+                    <div class="progress">
+                        <div class="progress-bar progress-bar-striped progress-bar-animated4" style="width:70%">
+                        </div>
+                    </div>
+                </div>
+                <!-- progress bar -->
+                <div class="my-progressBar">
+                    <div class="progress-name"><span class="font-sm my-text-black b">Flutter: 60%</span></div>
+                    <div class="progress">
+                        <div class="progress-bar progress-bar-striped progress-bar-animated5" style="width:60%">
+                        </div>
+                    </div>
+                </div>
+                <div class="about-img">
+                    <img src="https://images.unsplash.com/photo-1519389950473-47ba0277781c?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=750&q=80"
+                        alt="" srcset="" width="100%">
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Team Up page -->
+<div id="teamUP" class="my-container about">
+    <!-- the heading -->
+    <!-- <div id="teamTitle" class="d-flex justify-content-center my-text-white b">Team Up</div> -->
+    <div class="about-topic"><span class="font-xl my-text-black b">Team Up</span></div>
+    <div class="about-subtopic"><span class="font-md my-text-black"><%= teamUp.topic %></span>
+    </div>
+    <div class="project">
+        <div class="my-card teamUP-style">
+            <div class="card-img">
+                <a href="#x">
+                    <img src="https://images.unsplash.com/photo-1522071820081-009f0129c71c?ixlib=rb-1.2.1&auto=format&fit=crop&w=750&q=80"
+                        alt="img" srcset="">
+                </a>
+            </div>
+            <div class="card-detail">
+                <div class="topic"><span class="font-lg my-text-black"><%= teamUp.h1 %></span></div>
+                <div class="sub-topic"><span class="font-md my-text-black"><%= teamUp.h2 %> <a
+                            href="#footer">Social Media</a></span></div>
+                <div class="description my-border2">
+                    <p class="font-sm my-text-black"><%= teamUp.p1 %></p>
+                    <p class="font-sm my-text-black"><%= teamUp.p2 %></p>
+                    <p class="font-sm my-text-black b"><%= teamUp.p3 %></p>
+                    <!-- Team up btn  -->
+                    <div class="explore-btn-div viewMore">
+                        <a href="#x">
+                            <button class="btn teamUP-btn primary-border-color my-text-white font-sm b"
+                                onclick="contactMe(2)">Team Up</i></button>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<%- include("partials/footer") %> 

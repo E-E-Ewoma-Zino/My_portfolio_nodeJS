@@ -1,0 +1,37 @@
+/* THE FIRST CSS GOT TOO LONG SO I BROKE THE REST PART IN HERE */
+
+.shop-slide{
+    width: 80%!important;
+}
+
+#sideNav-multyslide,.carousel-item,.carousel-item > img{
+    height: 50vmin;
+}
+
+
+.product-detail-card{
+    display: flex;
+    flex-direction: column;
+}
+
+.product-img{
+    height: 60vmin;
+}
+
+.product-detail{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+/* SCREENS ABOVE 992px */
+
+@media only screen and (min-width: 992px) {
+    .product-detail-card{
+        flex-direction: row;
+    }
+
+    .product-img, .product-detail{
+        width: 50%;
+    }
+}
